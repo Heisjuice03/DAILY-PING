@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+header h1 {
+  background-color: #F1F1F1;
+  padding: 40px;
+  font-size: 65px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.con {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.notebook,
+.middle,
+.news {
+  width: 32%;
+}
+
+.notebook h2,
+.news h2 {
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.notebook p,
+.middle p,
+.news p {
+  margin-bottom: 13px;
+  text-align: justify;
+  word-spacing: 2px;
+}
+
+/* Responsive */
+/* Small Laptop View */
+@media screen and (max-width: 1024px) {
+  header h1 {
+    padding: 20px;
+    font-size: 55px;
+  }
+}
+
+
+/* Tablet View */
+@media screen and (max-width: 768px) {
+  header h1 {
+    padding: 20px;
+    font-size: 45px;
+  }
+}
+
+
+/* mobile View */
+@media screen and (max-width: 426px) {
+  .con {
+    display: block;
+    padding: 20px;
+  }
+
+    .notebook,
+    .middle,
+    .news {
+      width: 100%;
+    }
+}
